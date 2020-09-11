@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+        button {
+            transition-duration: 0.4s;
+          }
+          
+          button:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+          .para
+          {
+              color: darksalmon;
+            font: message-box ;
+            font-variant-caps: titling-caps;
+            font-family: sans-serif;
+                     
+          }
+          .td
+          {
+              align-content: center;
+              text-align: center;
+          }
+         
+        
+         
+
+    </style> 
+    <link rel="stylesheet" href="{% static 'museum/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+</head>
+<body style="background-color: black; color; color:wheat;">
+<div align='center';>
+    <h2>Photo Gallery</h2>
+</div>
+
+    <div align="right";>
+        <button onclick="location.href=' logout_request'" type="button">Log Out</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <div align='center';>
+    <table border="5" bordercolor="#ff0000" style="border: #4CAF50;border-spacing: 0ch; ">
+        <tr style="col"><th>SHIP NAME<th>PHOTO</th></tr>
+        <tr>
+            <td>BISMARCK</td><td><img src="static/museum/images/ships/bismarck.jpg" alt="index" style="width:400px;height:200px;"></a></td>
+        </tr>
+
+            <td>California</td><td><img src="static/museum/images/ships/Californian.jpg" alt="index" style="width:400px;height:200px;"></a></td>
+
+        </tr>
+        <tr>
+            <td>HOOD</td><td><img src="static/museum/images/ships/hood.jpg" alt="index" style="width:400px;height:200px;"></a></td>
+        </tr>
+            
+            <td>KIRISHMA</td><td><img src="static/museum/images/ships/kirishima.jpg" alt="index" style="width:400px;height:200px;"></a></td>
+        </tr>
+        
+        <tr>
+            <td>PRINCE OF WALES</td><td><img src="static/museum/images/ships/princeofwales.jpg" alt="index" style="width:400px;height:200px;"></a></td>
+        </tr>
+        <tr>
+            <td>RODNEY</td><td><img src="static/museum/images/ships/rodney.png" alt="index" style="width:400px;height:200px;"></a></td>
+        </tr>
+        <tr>
+            <td>WEST VIRGINIA</td><td><img src="static/museum/images/ships/westvirginia.jpg" alt="index" style="width:400px;height:200px;"></a></td>
+        </tr>
+        <tr>
+            <td>YASHAMIRO</td><td><img src="static/museum/images/ships/yashamiro.jpg" alt="index" style="width:400px;height:200px;"></a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

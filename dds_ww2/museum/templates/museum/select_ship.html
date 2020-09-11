@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Ship</title>
+</head>
+<body>
+   
+   
+    {% load static %}
+
+<link rel="stylesheet"  href="{% static 'museum/style.css' %}">
+<h1 style="color:aliceblue;">Welcome to the world war ships database</h1>
+
+<div class="dropdown">
+    <button class="dropbtn">ship</button>
+    
+    <div class="dropdown-content">
+        <a href="#" >aa</a>
+        {% for ship in data %}
+      <a href="ship.html">{{ship}}</a>
+     
+      {% endfor %}
+    </div>
+      
+    
+</div>
+<button onclick="location.href='about'" type="button">About</button>
+<button onclick="location.href='ship'" type="button">Ships</button>
+<button onclick="location.href=' /admin/'" type="button">Admin</button>
+<p>{{dest.ship_name}}</p>
+</body>

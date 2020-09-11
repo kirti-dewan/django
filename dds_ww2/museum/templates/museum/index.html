@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+     <style>
+        button {
+            transition-duration: 0.4s;
+          }
+          
+          button:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+        
+        }  
+
+    </style> 
+    <link rel="stylesheet" href="{% static 'museum/style.css' %}">
+    <title> Home</title>
+</head>  
+<body class="index" >
+    <div>
+        <center>
+            
+
+            <link rel="stylesheet"  href="{% static 'museum/style.css' %}">
+            <h1  style="color:aliceblue; ">Welcome to the world war ships database</h1>
+            
+            <button  onclick="location.href='about'" type="button">About</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="location.href='ship'" type="button">Ships</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="location.href=' /admin/'" type="button">Admin</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="location.href=' login_request'" type="button">Login(for photos)</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="location.href=' register'" type="button">Register(for photos)</button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <p>{{dest.ship_name}}</p>
+        
+    
+        </center>
+    </div>
+</body>
+</html>

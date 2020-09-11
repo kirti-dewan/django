@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+{% load static %}
+<html lang="en">  
+<head>  
+    <style>
+        .sub {
+            transition-duration: 0.4s;
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+        
+        .sub:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'museum/style.css' %}">
+    <meta charset="UTF-8">  
+    <title>About</title>  
+    <!--
+    {% load staticfiles %}  
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">  
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>  
+    -->
+</head>  
+<body class="aboutt">
+    <center>
+<h1>About page</h1>
+<h3>
+    World War II, also called Second World War, conflict that involved virtually every part of the world during the years 1939–45. The principal belligerents were the Axis powers—Germany, Italy, and Japan—and the Allies—France, Great Britain, the United States, the Soviet Union, and, to a lesser extent, China. The war was in many respects a continuation, after an uneasy 20-year hiatus, of the disputes left unsettled by World War I. The 40,000,000–50,000,000 deaths incurred in World War II make it the bloodiest conflict, as well as the largest war, in history.
+</h3>
+<h3>
+    This site is a collection of all the navals ships that participted in WW-II from various countries.
+    To see the naval ships' photos, you should be an authorized user. 
+    <br>(So register yourself first :) )
+    
+</h3>
+<br><br>
+<h3>
+    So, go on and explore the greatest world war's  history!!<br>  <br><br><br>
+</h3>
+   <h4 align='left';>
+    NOTE: Admins should be able to insert,delete and modify the data.
+   </h4> 
+
+
+
+
+    <form action="index" method="post">
+        {% csrf_token %}
+        <td><tr><input class="sub" type="submit" value="GO BACK"></td></tr>
+    </form>
+</center>
+</body>
+    </html>
+
+    
+

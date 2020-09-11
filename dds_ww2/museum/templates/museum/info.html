@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+        button {
+            transition-duration: 0.4s;
+          }
+          
+          button:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+          .para
+          {
+            border-spacing: 1cm 2em;
+              color: darksalmon;
+            font: message-box ;
+            font-variant-caps: titling-caps;
+            font-family: sans-serif;
+            align:justify;
+                     
+          }
+        
+         
+
+    </style> 
+    <link rel="stylesheet" href="{% static 'museum/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship info page</title>
+</head>
+<body  class="info">
+    <center>
+    <h1>SHIP INFO PAGE</h1>
+    <h2> {{result}}</h2>
+   
+        <div>
+            <table  align="centre" border="5">
+                <tr>
+                    <th>Ship Name</th>
+                
+                    <th>Class</th>
+                    <th>Launch Date</th>
+                </tr>
+                <tr> 
+                    <td>{{ result.ship_name }}</td>            
+                    <td>{{ result.class_name }}</td>
+                    <td>{{ result.launched }}</td>
+                    
+                </tr>
+               
+                
+            </table><br><br>
+            <div  style= "border-spacing: 1cm ;border-style: groove;width: 50%; " style="color: darkkhaki; background-blend-mode: darken;">
+              <tr >  <h3><b> Insight of the ship:  </b></h3></tr>
+              <tr ><p style="text-align: justify;" class="para"> {{result.desc}}</p></tr>
+            </div>
+        </div>
+    
+<br><br><br>
+    <form action="ship" method="post">
+        {% csrf_token %}
+        <input type="submit" value="GO BACK"></td></tr>
+
+    </center>    
+</body>
+</html>

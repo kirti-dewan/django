@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <style>
+        button {
+            transition-duration: 0.4s;
+            background-color: #4CAF50; /* Green */
+            color: white;
+          }
+          .para
+          {
+              color: darksalmon;
+            font: message-box ;
+            font-variant-caps: titling-caps;
+            font-family: sans-serif;
+                     
+          }
+        
+         
+
+    </style> 
+    <link rel="stylesheet" href="{% static 'museum/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body class='info'>
+    <center>
+{% block content %}
+
+<div class="container">
+    <form action='/photos_gallery' method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+        <button style="background-color:#F4EB16; color:blue" class="btn btn-outline-info" type="submit">Login</button>
+    </form>
+    Don't have an account? <a href="/register" target=""><strong>register here</strong></a>!
+</div>
+{% endblock %}
+<br><br>
+<form action="index" method="post">
+    {% csrf_token %}
+    <td><tr><input class="sub" type="submit" value="HOME"></td></tr>
+</form>
+</center>
+</body>
+</html>
