@@ -1,0 +1,61 @@
+
+.sub{
+  transition-duration: 0.4s;
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.ship{
+  color:wheat;
+  background-image: url("images/ship.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  
+  
+}
+.info{
+  color:wheat;
+  background-image: url("images/info.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+  
+.aboutt{
+  color:wheat;
+  background-image: url("images/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  
+
+}
+.index{
+
+  background-image: url("images/index.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+
+}
+
+.bodyy
+{
+  align: center ;
+  background-image: url("images/reg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  
+  
+}
